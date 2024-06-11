@@ -25,4 +25,7 @@ urlpatterns = [
     path('contact/', views.contact, name= 'contact'),
     # app -url  -> transfer control to ".urls"
     path('chai/', include('chai.urls')),
+
+
+    path("__reload__/", include("django_browser_reload.urls")),
 ]
